@@ -36,7 +36,7 @@ getJSON(apiURL, function(data) {
     for (var i = 0; i < data.result.length; i++) {
 
   	var name = data.result[i].name;
-  	var distance = data.result[i].distance.toFixed(1);
+  	var distance = data.result[i].distance.toFixed(0);
 
   	//Create List
   	var listElement = document.createElement("li");
@@ -76,7 +76,7 @@ getJSON(apiURL, function(data) {
 
 	}	
 
-	addInfoWindow(marker, name + '<br>' + distance + 'km from Imagination');
+	addInfoWindow(marker, name + '<br>' + distance + ' meters from Imagination');
 }
 
     // Create Imagination marker 
