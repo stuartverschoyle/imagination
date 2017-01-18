@@ -2,6 +2,7 @@ var map;
 var markersInfo = [];
 var radius = 3; // 3 kilometres
 var radiusInKm = radius * 1000;
+var apiURL = "https://data.gov.uk/data/api/service/transport/naptan_coach_stations/postcode?postcode=WC1E7BL&distance=" + radius;
 
 // getJSON function
 function getJSON(url, callback) {
@@ -25,9 +26,6 @@ function getJSON(url, callback) {
     // Send the request to the server
     xhr.send(null);
 } // End of getJSON function
-
-var apiURL = "https://data.gov.uk/data/api/service/transport/naptan_coach_stations/postcode?postcode=WC1E7BL&distance=" + radius;
-
 
 // Using the getJSON function
 getJSON(apiURL, function(data) {
