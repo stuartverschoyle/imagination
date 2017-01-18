@@ -1,0 +1,30 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background:#666;
+}
+
+div{
+	text-align: center;
+}
+
+h1{
+	color:#fff;
+}
+
+#map {
+	height: 100%;
+}
+#list{
+	list-style: none;
+	padding: 0;
+}
+#list li{
+	padding:10px 0px;
+}
+.logo{
+	max-width:200px;
+	padding:10px 0;
+	margin:0 auto;
+}
